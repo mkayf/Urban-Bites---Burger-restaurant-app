@@ -1,0 +1,186 @@
+/* Hero section 1 styling goes here */
+.hero-section{
+    position: relative;
+    background: url("../assets/hero/hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 140px;
+    padding-bottom: 90px;
+}
+.hero-burger{
+    width: 500px;
+    filter: drop-shadow(0px 30px 30px #0000005a);
+}
+
+.hero-section .price_badge{
+    background: url("../assets/hero/price-badge-yellow.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    right: 70px;
+    width: 180px;
+    height: 176px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text{
+    color: var(--white);
+    filter: drop-shadow(0px 15px 30px #0000005a);   
+}
+.hero_text h1{
+    font-family: var(--lilita-font);
+    font-size: 5.5rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px; 
+    filter: drop-shadow(0px 15px 20px #abaaaa5a);
+}
+
+.hero_text h2{
+    font-family: var(--lilita-font);
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: 3px; 
+}
+
+.hero_text p{
+    font-size: 1.1rem;
+    font-family: var(--oswald-font);
+}
+
+
+/* Media query mobile */
+@media (max-width: 992px){
+    .burger-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    .hero-section .hero_text h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 576px){
+    .hero-burger{
+        width: 400px;
+    }
+    .hero-section .price_badge{
+        width: 130px;
+        height: 126px;
+        right: 8px;
+    }   
+}
+
+@media (max-width: 428px){
+    .hero-burger{
+        width: 300px;
+    }
+    .hero-section .price_badge{
+        width: 110px;
+        height: 106px;
+        right: 8px;
+    }   
+    .hero-section .hero_text p{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* section 2 styling goes here */
+.mini-about-section{
+    padding-top: 80px;
+    padding-bottom: 330px;
+    background: url('../assets/about/about-1.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.mini-about-section h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.mini-about-section p{
+    font-size: 1.2rem;
+    color: var(--grey);
+    margin-bottom: 50px;
+    font-family: var(--roboto-font);
+    letter-spacing: 1px;
+}
+
+.mini-about-wrapper{
+    background-color: var(--yellow);
+    padding: 50px 0;
+}
+
+.mini-about-wrapper .about-box .about-icon img{
+    max-width: 35%;
+}
+
+.about-box h4{
+    margin: 20px 0;
+}
+
+.about-box p{
+    /* font-size: 1.1rem; */
+    font-family: var(--roboto-font);
+}
+
+/* media query for mobile responsiveness */
+@media (max-width: 576px){   
+    .mini-about-section h1{
+    font-size: 2.5rem;
+    }
+    .mini-about-section p{
+        font-size: 0.9rem;
+    }   
+}
+
+
+/* section 3 styling goes here */
+.mini-menu-section{
+    padding: 100px 0;
+}
+
+.mini-menu-section .card-img-top{
+    transition: all 500ms ease-in-out;
+}
+
+.mini-menu-section h2{
+    font-size: 3.5rem;
+    color: var(--light-red);
+}
+
+.mini-menu-section .para{
+    color: var(--grey);
+    padding: 10px 80px;
+    font-size: 1.1rem;
+    font-family: var(--roboto-font);
+    letter-spacing: 1px;
+}
+
+.mini-menu-section .item-rating i{
+    color: var(--yellow);
+    padding-right: 5px;
+}
+
+.mini-menu-section .wishlist i{
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mini-menu-section .wishlist i:hover{
+    color: var(--light-red);
+    
+}
