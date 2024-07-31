@@ -29,61 +29,48 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='navbar-collapsed'>
           <Nav className="ms-auto">
-          <Nav.Link>
               <NavLink to="/" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 Home
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
               <NavLink to="/about" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 About
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
               <NavLink to="/menu" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 Menu
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
               <NavLink to="/shop" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 Shop
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
               <NavLink to="/blog" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 Blog
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
               <NavLink to="/contact" className={({isActive}) => `
               nav_links
                 ${isActive ? 'active_link' : ''}
               `}>
                 Contact
             </NavLink>
-            </Nav.Link>
 
-            <Nav.Link>
                 <div className='cart'>
                 <NavLink to="/contact" className={({isActive}) => `
               nav_links cart-navlink
@@ -93,7 +80,6 @@ const Header = () => {
                 <em className='roundpoint'>2</em>
                 </NavLink>
                 </div>
-            </Nav.Link>
 
           </Nav>
         </Navbar.Collapse>

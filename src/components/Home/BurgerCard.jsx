@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const BurgerCard = ({burgerData}) => {
+const BurgerCard = ({burgerData, renderRatingStars}) => {
     const {id, image, title, paragraph, rating, price} = burgerData;
   return (
     <>
@@ -13,7 +13,7 @@ const BurgerCard = ({burgerData}) => {
                 </div>
                 <Card.Body>
                     <div className="d-flex align-items-center justify-content-between">
-                    <div className="item-rating">rating</div>
+                    <div className="item-rating">{renderRatingStars(rating)}</div>
                     <div className="wishlist">
                         <i className='bi bi-heart'></i>
                     </div>
@@ -23,12 +23,12 @@ const BurgerCard = ({burgerData}) => {
 
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="menu-price">
-                            <h5 className='mb-0'>{price}</h5>
+                            <h5 className='mb-0'>PKR {price}</h5>
                         </div>
                         <div className="add-to-cart">
                             <Link to="/">
-                            <i class="bi bi-bag me-2"></i>
-                            Add To Cart
+                            <i className="bi bi-bag me-2"></i>
+                            Add to Cart
                             </Link>
                         </div>
                     </div>

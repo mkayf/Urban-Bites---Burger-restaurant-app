@@ -62,9 +62,7 @@ header .logo{
     transition: all 0.2s ease-in-out;
 }
 
-.active_link{
-    color: var(--yellow);
-}
+
   
 header .sticky .nav_links{
     color: var(--light-black); 
@@ -97,7 +95,13 @@ header .roundpoint{
     align-items: center;
 }
 
+.active_link{
+    color: var(--yellow);
+}
 
+header .sticky .active_link{
+    color: var(--yellow);
+}
 
 @media (max-width: 767px){
     header .navbar{

@@ -137,12 +137,15 @@
 }
 
 /* media query for mobile responsiveness */
-@media (max-width: 576px){   
+@media (max-width:576px){   
     .mini-about-section h1{
     font-size: 2.5rem;
-    }
+        }
     .mini-about-section p{
         font-size: 0.9rem;
+    }
+    .mini-about-section .explore-btn{
+        text-align: left;
     }   
 }
 
@@ -151,6 +154,7 @@
 .mini-menu-section{
     padding: 100px 0;
 }
+
 
 .mini-menu-section .card-img-top{
     transition: all 500ms ease-in-out;
@@ -163,10 +167,11 @@
 
 .mini-menu-section .para{
     color: var(--grey);
-    padding: 10px 80px;
+    padding: 10px 10px;
     font-size: 1.1rem;
     font-family: var(--roboto-font);
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .mini-menu-section .item-rating i{
@@ -183,4 +188,107 @@
 .mini-menu-section .wishlist i:hover{
     color: var(--light-red);
     
+}
+
+.mini-menu-section .card-title{
+    /* font-weight: bold; */
+    font-family: var(--oswald-font);
+}
+
+.mini-menu-section .card-text{
+    color: var(--grey);
+}
+
+.mini-menu-section .menu-price{
+    background-color: var(--bg-coffee);
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+.mini-menu-section .menu-price h5{
+    color: var(--white);
+    font-family: var(--oswald-font);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.mini-menu-section .card-body .add-to-cart a{
+    background-color: var(--yellow);
+    padding: 5px 7px;
+    font-weight: 500;
+    font-family: var(--roboto-font);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.mini-menu-section .card:hover .card-body .add-to-cart a{ 
+    top: 0px;
+    opacity: 1;
+}
+
+
+.mini-menu-section .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+
+/* ads box styling */
+
+.ads-box{
+    text-align: right;
+    height: 250px;
+    border-radius: 30px;
+    padding: 30px;
+    align-content: center;
+    overflow: hidden;
+    box-shadow:  10px 10px 32px #e4e4e4,
+             -10px -10px 32px #ffffff;
+
+}
+
+.ads-img-1{
+    background: url('../assets/menu/ads-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.ads-img-2{
+    background: url('../assets/menu/ads-2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.ads-box h4{
+    color: var(--brown);
+    font-size: 1.8rem;
+}
+
+.ads-box h5{
+    color: var(--yellow);
+    font-size: 2.3rem;
+}
+
+.ads-box a{
+    padding: 10px 15px;
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.ads-box:hover a{
+    transform: translateX(0);
+    opacity: 1;
 }
