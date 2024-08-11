@@ -292,3 +292,202 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+/*  */
+/* section 4 styling */
+
+.promotion-section{
+    background-color: var(--light-grey);
+    /* background-color: red; */
+    padding: 50px 0;    
+}
+
+.promotion-section img{
+    height: 500px;
+}
+.promotion-section h2{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.promotion-section p{
+    font-family: var(--roboto-font);
+    color: var(--light-black);
+    /* color: blue; */
+}
+
+.bg-parallax-scroll{
+    background: url('../assets/menu/parallax/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 5 shop section styling goes here */
+
+.shop-section{
+    background-color: var(--yellow);
+    padding: 70px 0 0;
+}
+
+.shop-section h4{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--bg-coffee);
+}
+
+.shop-section h2{
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: var(--bg-coffee);
+}
+
+.shop-section p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-right: 10%;
+    color: var(--bg-coffee);
+    margin-bottom: 40px;
+}
+
+.shop-section .app-btn{
+    max-width: 30%;
+}
+
+.brand-section{
+    padding: 70px 0 40px;
+    background: var(--light-grey);
+    overflow: hidden;
+}
+
+.brand-section .brand-img{
+    width: 180px;
+    height: auto;
+}
+
+.carousel.slide .carousel-inner{
+    overflow: unset;
+}
+
+.carousel.slide .carousel-inner .carousel-caption{
+    position: relative;
+    right: unset;
+    left: unset;
+}
+
+/* section 6 styling goes here - feedbacks section */
+
+.user-feedbacks-section{
+    background: url('../assets/blog/reviews.jpg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.user-feedbacks-section p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0 12%;
+}
+
+.customer-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+
+.user-feedbacks-section .customer-rating i{
+    color: var(--yellow);
+    margin: 0 5px;
+    font-size: 1.3rem;
+}
+
+/* Section 7 styling goes here */
+
+.delivery-section{
+    background: url('../assets/footer/banner-1.jpg') center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.delivery-section h4{
+    font-size: 2.2rem;
+}
+
+.delivery-section h2{
+    font-size: 4rem;
+}
+
+.delivery-section p{
+    font-size: 1.2rem;
+    padding: 0 15%;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px){
+    .bg-parallax-scroll{
+        height: 300px;
+        background-attachment: scroll;
+    }
+
+    .shop-section h4{
+        font-size: 1.8rem;
+    }
+    .shop-section h2{
+        font-size: 2.8rem;
+    }
+
+    .shop-section p{
+        padding: 0 5%;
+
+    }
+    .user-feedbacks-section h2{
+        font-size: 1.5rem;
+    }
+    .user-feedbacks-section p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width: 576px){
+    .promotion-section p{
+        font-size: 1rem;
+    }
+    .brand-section{
+        padding: 50px 0 10px;
+        /* border: 2px solid red; */
+    }
+    .delivery-section h4{
+        font-size: 1.3rem;
+    }
+    .delivery-section h2{
+        font-size: 2.3rem;
+    }
+    .delivery-section P{
+        padding: 5%;
+        font-size: 1rem;
+    }
+    .delivery-section a{
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 440px){
+    .promotion-section img{
+        max-height: 300px;
+    }
+}
