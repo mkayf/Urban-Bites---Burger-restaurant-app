@@ -1,0 +1,93 @@
+footer{
+    padding-top: 80px;
+}
+
+footer h5{
+    margin-bottom: 25px;
+    color: var(--light-black);
+}
+footer p{
+    font-size: 1.0575rem;
+    color: rgb(78, 78, 78);
+}
+
+footer .calling{
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+footer ul li .bi{
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: 3px 7px;
+    border-radius: 50%;
+
+}
+
+footer .copyright-div{
+    margin-top: 20px;
+    border-top: 1px solid var(--grey);
+    padding: 30px;
+}
+
+footer .copyright-div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+footer .copyright-div .copyright-para{
+    font-size: 1.1rem;
+}
+
+
+footer .copyright-div ul li a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+
+@media (max-width: 768px){
+    footer .copyright-div ul{
+        display: block;
+    }
+    footer .copyright-div ul li{
+        display: inline-block;
+        margin: 3px 10px;
+    }
+    footer .copyright-div .copyright-li{
+        display: block;
+    }
+}
+
+
+@media (max-width: 576px){
+    footer .copyright-div .copyright-para{
+        font-size: 1rem;
+    }
+    footer .copyright-div ul li{
+        font-size: 1rem;
+    }
+}
+
+/* scroll to top box styling */
+.scroll-div{
+    padding: 6px 10px;
+    color: white;
+    border-radius: 50%;
+    background-color: var(--light-red);
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    cursor: pointer;
+}
