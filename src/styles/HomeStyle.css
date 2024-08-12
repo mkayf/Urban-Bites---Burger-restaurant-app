@@ -55,45 +55,6 @@
 }
 
 
-/* Media query mobile */
-@media (max-width: 992px){
-    .burger-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-}
-
-@media (max-width: 768px){
-    .hero-section .hero_text h1{
-        font-size: 4rem;
-    }
-}
-
-@media (max-width: 576px){
-    .hero-burger{
-        width: 400px;
-    }
-    .hero-section .price_badge{
-        width: 130px;
-        height: 126px;
-        right: 8px;
-    }   
-}
-
-@media (max-width: 428px){
-    .hero-burger{
-        width: 300px;
-    }
-    .hero-section .price_badge{
-        width: 110px;
-        height: 106px;
-        right: 8px;
-    }   
-    .hero-section .hero_text p{
-        font-size: 0.9rem;
-    }
-}
 
 
 /* section 2 styling goes here */
@@ -134,19 +95,6 @@
 .about-box p{
     /* font-size: 1.1rem; */
     font-family: var(--roboto-font);
-}
-
-/* media query for mobile responsiveness */
-@media (max-width:576px){   
-    .mini-about-section h1{
-    font-size: 2.5rem;
-        }
-    .mini-about-section p{
-        font-size: 0.9rem;
-    }
-    .mini-about-section .explore-btn{
-        text-align: left;
-    }   
 }
 
 
@@ -434,7 +382,24 @@
 
 
 
+
+
+
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 992px){
+    .burger-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+}
 @media (max-width: 768px){
+    .hero-section .hero_text h1{
+        font-size: 4rem;
+    }
     .bg-parallax-scroll{
         height: 300px;
         background-attachment: scroll;
@@ -458,10 +423,25 @@
         font-size: 1rem;
         font-weight: 400;
     }
-
 }
-
 @media (max-width: 576px){
+    .hero-burger{
+        width: 400px;
+    }
+    .hero-section .price_badge{
+        width: 130px;
+        height: 126px;
+        right: 8px;
+    }
+    .mini-about-section h1{
+    font-size: 2.5rem;
+    }
+    .mini-about-section p{
+        font-size: 0.9rem;
+    }
+    .mini-about-section .explore-btn{
+        text-align: left;
+    }
     .promotion-section p{
         font-size: 1rem;
     }
@@ -484,10 +464,21 @@
         font-size: 1rem;
     }
 }
-
-
 @media (max-width: 440px){
     .promotion-section img{
         max-height: 300px;
+    }
+}
+@media (max-width: 428px){
+    .hero-burger{
+        width: 300px;
+    }
+    .hero-section .price_badge{
+        width: 110px;
+        height: 106px;
+        right: 8px;
+    }   
+    .hero-section .hero_text p{
+        font-size: 0.9rem;
     }
 }
