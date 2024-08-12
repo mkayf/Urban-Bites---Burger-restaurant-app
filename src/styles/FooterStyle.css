@@ -87,7 +87,7 @@ footer .copyright-div ul li a{
     border-radius: 50%;
     background-color: var(--light-red);
     position: fixed;
-    right: 30px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 10px;
     cursor: pointer;
 }
